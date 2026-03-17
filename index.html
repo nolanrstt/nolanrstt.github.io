@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - BTS SIO SLAM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-circle"></div>
+
+    <nav class="nav-droite">
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#parcours">Scolarité</a></li>
+            <li><a href="#stages">Stages</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#veille">Veille Tech</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="accueil" class="section-full">
+            <p class="welcome-text">Bienvenue sur mon portfolio</p>
+            <h1><span class="prenom">Nolan</span><br>Roisot</h1>
+            <a href="cv.pdf" target="_blank" class="btn-pilule">Télécharger mon CV</a>
+        </section>
+
+        <section id="a-propos" class="section-content">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="content-box">
+                <p>Je m'appelle [Ton Prénom] et je suis actuellement en 2ème année de BTS SIO option SLAM (Solutions Logicielles et Applications Métiers). Mon objectif est de devenir développeur [Full-Stack / Backend / Logiciel]...</p>
+                </div>
+        </section>
+
+        <section id="parcours" class="section-content">
+            <h2 class="section-title">Parcours Scolaire</h2>
+            <div class="content-box">
+                <p>La ligne du temps de tes diplômes viendra ici.</p>
+            </div>
+        </section>
+
+        <section id="stages" class="section-content">
+            <h2 class="section-title">Expériences & Stages</h2>
+            <div class="content-box">
+                <p>Le détail de tes missions en stage viendra ici.</p>
+            </div>
+        </section>
+
+        <section id="projets" class="section-content">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="content-box">
+                <p>La grille avec les cartes de tes projets viendra ici.</p>
+            </div>
+        </section>
+
+        <section id="veille" class="section-content">
+            <h2 class="section-title">Veille Technologique</h2>
+            <div class="content-box">
+                <p>Sujet : [Ton sujet de veille]. Les articles viendront ici.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section-content">
+            <h2 class="section-title">Me Contacter</h2>
+            <div class="contact-container">
+                <p class="contact-desc">Une question, une opportunité ? N'hésitez pas à m'envoyer un message.</p>
+                
+                <form action="#" method="POST" class="contact-form">
+                    <div class="input-group">
+                        <input type="text" id="nom" name="nom" placeholder="Votre Nom" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" placeholder="Votre Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Votre Message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-pilule btn-submit">Envoyer le message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
