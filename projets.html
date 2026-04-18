@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets | Portfolio Nolan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="nav-top">
+        <a href="index.html" class="nav-logo">Nolan<span>.dev</span></a>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="competences.html">Compétences</a></li>
+            <li><a href="parcours.html">Parcours</a></li>
+            <li><a href="projets.html" class="active">Projets</a></li>
+            <li><a href="veille.html">Veille</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section-content">
+            <h2 class="section-title">Mes Projets</h2>
+            
+            <div class="content-box" style="max-width: 1000px; margin: 0 auto;">
+                <p class="about-text" style="margin-bottom: 4rem; text-align: center;">
+                    Découvrez en détail les applications et sites web que j'ai conçus.
+                </p>
+
+                <div class="projects-list">
+
+                    <article class="project-card-vertical reveal">
+                        <div class="card-glowing-border"></div>
+                        <div class="project-content">
+                            <h2 class="project-title">📊 InfoTools CRM (SlamDunkApp)</h2>
+                            <div class="project-tags">
+                                <span class="tag-color tag-csharp">C# / WPF</span>
+                                <span class="tag-color tag-dotnet">.NET 8</span>
+                                <span class="tag-color tag-sql">MySQL</span>
+                            </div>
+                            <p class="project-desc">
+                                Logiciel de gestion de la relation client (CRM) conçu pour une PME. Un projet de bureau (Client Lourd) axé sur la maintenance évolutive, l'optimisation des données et la cybersécurité.
+                            </p>
+                            <button class="btn-outline" onclick="openModal('slamdunk')">Analyser le projet</button>
+                        </div>
+                    </article>
+
+                    <article class="project-card-vertical reveal">
+                        <div class="card-glowing-border" style="background: linear-gradient(180deg, #facc15, #ca8a04);"></div>
+                        <div class="project-content">
+                            <h2 class="project-title">🐝 FG Destruction</h2>
+                            <div class="project-tags">
+                                <span class="tag-color tag-html">HTML / CSS</span>
+                                <span class="tag-color tag-tailwind">Tailwind CSS</span>
+                                <span class="tag-color tag-php">PHP</span>
+                                <span class="tag-color tag-js">JavaScript</span>
+                            </div>
+                            <p class="project-desc">
+                                Site vitrine officiel pour une entreprise spécialisée dans la destruction de nids de frelons à Dijon. Interface rassurante, tarifs transparents et formulaire de contact dynamique.
+                            </p>
+                            <button class="btn-outline" onclick="openModal('fgdestruction')">Analyser le projet</button>
+                        </div>
+                    </article>
+
+                    <article class="project-card-vertical reveal">
+                        <div class="card-glowing-border" style="background: linear-gradient(180deg, #ef4444, #b91c1c);"></div>
+                        <div class="project-content">
+                            <h2 class="project-title">💼 JobPilot</h2>
+                            <div class="project-tags">
+                                <span class="tag-color tag-php">PHP</span>
+                                <span class="tag-color tag-laravel">Laravel</span>
+                                <span class="tag-color tag-sql">MySQL</span>
+                                <span class="tag-color tag-api">API REST</span>
+                            </div>
+                            <p class="project-desc">
+                                Plateforme web de recrutement mettant en relation entreprises et candidats. Gestion complète des offres, système d'authentification et API sécurisée.
+                            </p>
+                            <button class="btn-outline" onclick="openModal('jobpilot')">Analyser le projet</button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal-overlay" id="modal-slamdunk" onclick="handleOverlayClick(event,'slamdunk')">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 class="modal-title">InfoTools CRM</h2>
+                <button class="modal-close" onclick="closeModal('slamdunk')">✕</button>
+            </div>
+            <div class="modal-content">
+                <div class="project-tags" style="margin-bottom: 2rem;">
+                    <span class="tag-color tag-csharp">C#</span>
+                    <span class="tag-color tag-csharp">WPF</span>
+                    <span class="tag-color tag-dotnet">.NET 8</span>
+                    <span class="tag-color tag-sql">MySQL</span>
+                    <span class="tag-color" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);">MSTest</span>
+                    <span class="tag-color" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);">LiveCharts</span>
+                    <span class="tag-color" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);">iTextSharp</span>
+                </div>
+
+                <div class="modal-section-title">📝 Présentation du projet</div>
+                <p class="modal-text">
+                    InfoTools est une application de bureau (Client Lourd) développée en <strong>C# (WPF)</strong> sous le framework <strong>.NET 8</strong>. Il s'agit d'un logiciel de gestion de la relation client (CRM) conçu pour une PME. Le projet s'inscrit dans une démarche de maintenance évolutive, avec un fort accent sur l'optimisation des données et la cybersécurité.
+                </p>
+
+                <div class="modal-section-title">✨ Fonctionnalités Principales</div>
+                <ul class="features-list">
+                    <li><strong>Tableau de Bord Interactif :</strong> Visualisation des statistiques de l'entreprise en temps réel via des graphiques (LiveCharts).</li>
+                    <li><strong>Gestion Commerciale (CRUD) :</strong> Administration unifiée des clients, des prospects et du catalogue de produits IT.</li>
+                    <li><strong>Agenda Intelligent :</strong> Système de prise de rendez-vous avec prévention automatique des chevauchements d'horaires.</li>
+                    <li><strong>Sécurité & Traçabilité :</strong> Enregistrement complet des actions utilisateurs (historique et audit) avec sérialisation des données au format JSON.</li>
+                    <li><strong>Reporting :</strong> Génération automatique de bilans et de statistiques au format PDF.</li>
+                </ul>
+
+                <div class="modal-section-title">📸 Captures de l'application</div>
+                <div class="modal-gallery">
+                    <div>
+                        <h4 style="color: var(--text-primary); font-size: 0.9rem; margin-bottom: 8px; text-align: center;">Dashboard & Statistiques</h4>
+                        <div class="gallery-item">
+                            <img src="img/img1.png" alt="Dashboard InfoTools" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                        </div>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-primary); font-size: 0.9rem; margin-bottom: 8px; text-align: center;">Agenda Intelligent</h4>
+                        <div class="gallery-item">
+                            <img src="img/img2.png" alt="Agenda Intelligent" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                        </div>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-primary); font-size: 0.9rem; margin-bottom: 8px; text-align: center;">Architecture Base de Données</h4>
+                        <div class="gallery-item">
+                            <img src="img/img3.png" alt="Base de données MySQL" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2.5rem; text-align: center;">
+                    <a href="https://github.com/nolanrstt/InfoTools-CRM-LOURD" target="_blank" class="btn-pilule">Voir le code sur GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-fgdestruction" onclick="handleOverlayClick(event,'fgdestruction')">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 class="modal-title">FG Destruction</h2>
+                <button class="modal-close" onclick="closeModal('fgdestruction')">✕</button>
+            </div>
+            <div class="modal-content">
+                <div class="project-tags" style="margin-bottom: 2rem;">
+                    <span class="tag-color tag-html">HTML5 / CSS3</span>
+                    <span class="tag-color tag-tailwind">Tailwind CSS</span>
+                    <span class="tag-color tag-php">PHP</span>
+                    <span class="tag-color tag-js">JavaScript</span>
+                    <span class="tag-color" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);">API Gouvernement</span>
+                    <span class="tag-color" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);">FormSubmit</span>
+                </div>
+
+                <div class="modal-section-title">🎯 Objectif du projet</div>
+                <p class="modal-text">
+                    Ce projet web a pour but de fournir une interface claire et rassurante pour les clients confrontés à des nuisibles dangereux. Il permet d'identifier l'insecte, de consulter une grille tarifaire transparente et de demander une intervention rapide via un formulaire de contact.
+                </p>
+
+                <div class="modal-section-title">📂 Structure & Technologies</div>
+                <ul class="features-list">
+                    <li><strong>Design & UI :</strong> Utilisation de Tailwind CSS pour un design moderne, responsive et l'intégration d'un Dark Mode sur mesure.</li>
+                    <li><strong>Dynamisme PHP :</strong> Gestion des variables globales (téléphone, nom de l'entreprise) pour faciliter les futures mises à jour sur toutes les pages.</li>
+                    <li><strong>UX & JavaScript :</strong> Autocomplétion de l'adresse postale dans le formulaire via l'API Adresse du gouvernement français.</li>
+                    <li><strong>Contact :</strong> Gestion de l'envoi des e-mails du formulaire sans backend complexe grâce à l'outil FormSubmit.</li>
+                </ul>
+
+                <div class="modal-section-title">📸 Captures de l'application</div>
+                <div class="modal-gallery">
+                    <div>
+                        <h4 style="color: var(--text-primary); font-size: 0.9rem; margin-bottom: 8px; text-align: center;">Grille Tarifaire (tarifs.php)</h4>
+                        <div class="gallery-item">
+                            <img src="img/img4.png" alt="Grille Tarifaire FG Destruction" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                        </div>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--text-primary); font-size: 0.9rem; margin-bottom: 8px; text-align: center;">Formulaire de Devis (contact.php)</h4>
+                        <div class="gallery-item">
+                            <img src="img/img5.png" alt="Formulaire de devis" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2.5rem; text-align: center;">
+                    <a href="https://github.com/nolanrstt/Site-web-stage" target="_blank" class="btn-pilule">Voir le code sur GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-jobpilot" onclick="handleOverlayClick(event,'jobpilot')">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 class="modal-title">JobPilot</h2>
+                <button class="modal-close" onclick="closeModal('jobpilot')">✕</button>
+            </div>
+            <div class="modal-content">
+                <div class="project-tags" style="margin-bottom: 2rem;">
+                    <span class="tag-color tag-php">PHP</span>
+                    <span class="tag-color tag-laravel">Laravel</span>
+                    <span class="tag-color tag-sql">MySQL</span>
+                    <span class="tag-color tag-api">API REST</span>
+                    <span class="tag-color" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);">MVC</span>
+                    <span class="tag-color" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);">Logs & Audit</span>
+                </div>
+
+                <div class="modal-section-title">💼 Contexte & Objectifs</div>
+                <p class="modal-text">
+                    <strong>JobPilot</strong> est une plateforme web de gestion d'offres d'emploi développée dans le cadre de ma formation en BTS SIO option SLAM.<br><br>
+                    L'objectif du projet était de créer une application complète permettant aux <strong>entreprises de publier des offres d'emploi</strong> et aux <strong>candidats de postuler directement en ligne</strong>. Le projet inclut également un système d'administration permettant de gérer les utilisateurs et leurs rôles.
+                </p>
+
+                <div class="modal-section-title">⚙️ Fonctionnalités développées</div>
+                <ul class="features-list">
+                    <li><strong>Gestion des offres :</strong> Création, modification et suppression des annonces (CRUD complet).</li>
+                    <li><strong>Authentification & Rôles :</strong> Système sécurisé avec Laravel gérant 3 niveaux d'accès : Admin, Entreprise et Candidat.</li>
+                    <li><strong>Espace Candidature :</strong> Possibilité pour les candidats de postuler directement aux offres.</li>
+                    <li><strong>Administration globale :</strong> Interface d'administration dédiée pour gérer les utilisateurs, les candidats et les entreprises.</li>
+                    <li><strong>API REST :</strong> Création d'une API sécurisée pour accéder aux données de la plateforme depuis l'extérieur.</li>
+                    <li><strong>Sécurité & Traçabilité :</strong> Mise en place de logs d'audit pour suivre les actions importantes des utilisateurs.</li>
+                </ul>
+
+                <div style="margin-top: 2.5rem; text-align: center;">
+                    <a href="https://github.com/nolanrstt/JobPilot" target="_blank" class="btn-pilule">Voir le code sur GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="image-lightbox" class="lightbox-overlay" onclick="closeLightbox(event)">
+        <span class="lightbox-close">✕</span>
+        <img id="lightbox-img" src="" alt="Image agrandie">
+    </div>
+
+    <script>
+        /* --- GESTION DES MODALES --- */
+        function openModal(id) {
+            document.getElementById('modal-' + id).classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal(id) {
+            document.getElementById('modal-' + id).classList.remove('open');
+            document.body.style.overflow = '';
+        }
+        function handleOverlayClick(e, id) {
+            if (e.target === e.currentTarget) closeModal(id);
+        }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.modal-overlay.open').forEach(m => {
+                    m.classList.remove('open');
+                    document.body.style.overflow = '';
+                });
+                // Fermeture de la lightbox
+                const lightbox = document.getElementById('image-lightbox');
+                if(lightbox) lightbox.classList.remove('active');
+            }
+        });
+
+        /* --- LIGHTBOX (AGRANDISSEMENT IMAGES) --- */
+        function openLightbox(src) {
+            const lightbox = document.getElementById('image-lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = src;
+            lightbox.classList.add('active');
+        }
+        function closeLightbox(e) {
+            if (e.target !== document.getElementById('lightbox-img')) {
+                document.getElementById('image-lightbox').classList.remove('active');
+            }
+        }
+
+        /* --- ANIMATION AU SCROLL --- */
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 }); 
+
+        reveals.forEach(reveal => {
+            observer.observe(reveal);
+        });
+    </script>
+</body>
+</html>
