@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique - Nolan.dev</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="nav-top">
+        <a href="index.html" class="nav-logo">NOLAN<span>.DEV</span></a>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="competences.html">Compétences</a></li>
+            <li><a href="parcours.html">Parcours</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="veille.html" class="active">Veille</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="section-content">
+        
+        <div class="accueil-centre" style="margin-bottom: 5rem;">
+            <h1 class="prenom">Veille Technologique</h1>
+            <p class="hero-desc">
+                Analyse de l'évolution de l'Intelligence Artificielle dans le cycle de développement logiciel et ses impacts sur le métier de développeur.
+            </p>
+        </div>
+
+        <section class="project-card reveal" style="max-width: 900px; margin: 0 auto 5rem auto; cursor: default;">
+            <div class="card-body" style="text-align: center; justify-content: center;">
+                <h3 class="card-title" style="margin-bottom: 1.5rem; font-size: 1.8rem;">Ma Méthodologie</h3>
+                <p class="card-desc" style="margin-bottom: 2.5rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                    Pour cette veille, j'ai mis en place un flux automatisé via <strong>Feedly</strong> pour agréger les blogs officiels et sites spécialisés. Chaque article pertinent est ensuite stocké et analysé dans une base de données <strong>Notion</strong>, permettant un suivi critique des innovations.
+                </p>
+                <div class="hero-actions">
+                    <a href="https://feedly.com/" target="_blank" class="btn-outline">Accéder à mon Feedly</a>
+                    <a href="https://rich-staircase-4ea.notion.site/349f05eca5b680909558c02ed872c471?v=349f05eca5b680eca9f8000cb6aceebc" target="_blank" class="btn-outline">Ma Base Notion</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="articles-container" style="margin-bottom: 5rem;">
+
+            <article class="article-card reveal">
+                <div class="article-header">
+                    <span>30 Décembre 2025</span>
+                    <span class="article-badge" style="border-color: rgba(168, 85, 247, 0.4); color: #c084fc;">IA & Dev</span>
+                </div>
+                <h2 class="article-title">OpenAI : L'évolution des API pour les développeurs en 2025</h2>
+                <p class="article-source">Source : OpenAI (via Feedly)</p>
+                <p class="article-summary">
+                    Un bilan sur les nouvelles capacités des API d'OpenAI, mettant l'accent sur les modèles optimisés pour le code et l'intégration native d'agents capables d'exécuter des tâches complexes de manière autonome.
+                </p>
+                <div class="article-block">
+                    <strong>Mon analyse :</strong> Le passage à des "Agent-native APIs" change la donne. On ne demande plus seulement à l'IA de générer du texte, mais de piloter des workflows entiers. C'est une automatisation profonde du cycle de dev.
+                </div>
+                <div class="article-block slam">
+                    <strong>Projection Technique (SLAM) :</strong> Cela m'oblige à repenser la conception de mes API. Je dois désormais prévoir des endpoints "pilotables par IA" avec une documentation (OpenAPI/Swagger) irréprochable pour faciliter cette intégration.
+                </div>
+                <a href="https://developers.openai.com/blog/openai-for-developers-2025" target="_blank" class="btn-read">Lire l'article original →</a>
+            </article>
+
+            <article class="article-card reveal">
+                <div class="article-header">
+                    <span>18 Novembre 2025</span>
+                    <span class="article-badge" style="border-color: rgba(34, 211, 238, 0.4); color: #22d3ee;">Outils & Low-Code</span>
+                </div>
+                <h2 class="article-title">Microsoft : Nouveautés majeures de Copilot Studio</h2>
+                <p class="article-source">Source : Microsoft Learn (via Feedly)</p>
+                <p class="article-summary">
+                    Microsoft dévoile des fonctionnalités de communication "Agent-to-Agent" permettant aux entreprises de créer des systèmes d'IA collaboratifs qui se délèguent des tâches automatiquement.
+                </p>
+                <div class="article-block">
+                    <strong>Mon analyse :</strong> L'interopérabilité entre agents IA devient un standard. C'est fascinant de voir comment Microsoft démocratise la création d'agents complexes via des interfaces de plus en plus accessibles aux développeurs.
+                </div>
+                <div class="article-block slam">
+                    <strong>Projection Technique (SLAM) :</strong> Pour mes projets, cela signifie que je dois maîtriser les outils de "Prompt Engineering" avancé et les orchestrateurs d'agents pour créer des solutions logicielles plus intelligentes et réactives.
+                </div>
+                <a href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new" target="_blank" class="btn-read">Lire l'article original →</a>
+            </article>
+
+            <article class="article-card reveal">
+                <div class="article-header">
+                    <span>14 Novembre 2025</span>
+                    <span class="article-badge" style="border-color: rgba(16, 185, 129, 0.4); color: #10b981;">Innovation</span>
+                </div>
+                <h2 class="article-title">Bilan annuel de Devin AI : Performances en entreprise</h2>
+                <p class="article-source">Source : Cognition AI (via Feedly)</p>
+                <p class="article-summary">
+                    Une rétrospective sur l'intégration de l'agent Devin dans les flux de production réels. L'article détaille son efficacité sur la résolution autonome de tickets et la maintenance de code legacy.
+                </p>
+                <div class="article-block">
+                    <strong>Mon analyse :</strong> Le recul de 18 mois montre que l'IA autonome n'est pas une menace mais un multiplicateur de force. Elle traite les bugs répétitifs, ce qui nous permet de nous concentrer sur l'architecture et la logique métier.
+                </div>
+                <div class="article-block slam">
+                    <strong>Projection Technique (SLAM) :</strong> L'usage d'un tel agent confirme qu'un code propre et bien testé (TDD) est indispensable. Un agent comme Devin est beaucoup plus efficace sur une base de code structurée, ce qui renforce mon exigence sur la qualité logicielle.
+                </div>
+                <a href="https://cognition.ai/blog/devin-annual-performance-review-2025" target="_blank" class="btn-read">Lire l'article original →</a>
+            </article>
+
+            <article class="article-card reveal">
+                <div class="article-header">
+                    <span>15 Octobre 2025</span>
+                    <span class="article-badge" style="border-color: rgba(239, 68, 68, 0.4); color: #ef4444;">Cybersécurité</span>
+                </div>
+                <h2 class="article-title">Cybersécurité : Protection mémoire et code généré</h2>
+                <p class="article-source">Source : RunSafe Security (via Feedly)</p>
+                <p class="article-summary">
+                    Analyse des risques de sécurité spécifiques au code produit par les IA, notamment les vulnérabilités de gestion mémoire, et présentation de techniques de protection automatique.
+                </p>
+                <div class="article-block">
+                    <strong>Mon analyse :</strong> C'est le revers de la médaille. La vitesse de génération ne doit pas occulter la sécurité. Le "code mutant" généré par IA nécessite des outils d'audit tout aussi automatisés et performants.
+                </div>
+                <div class="article-block slam">
+                    <strong>Projection Technique (SLAM) :</strong> Cela m'incite à systématiser l'usage d'outils d'analyse statique (Snyk, SonarQube) dans mes pipelines de déploiement pour intercepter toute faille introduite par une suggestion d'IA.
+                </div>
+                <a href="https://runsafesecurity.com/blog/ai-generated-code-memory-protection/" target="_blank" class="btn-read">Lire l'article original →</a>
+            </article>
+
+        </div>
+
+    </main>
+
+    <footer style="text-align: center; padding: 4rem; color: var(--text-muted); font-size: 0.9rem;">
+        &copy; 2026 Nolan Roisot - BTS SIO. Veille réalisée avec Feedly & Notion.
+    </footer>
+
+</body>
+</html>
